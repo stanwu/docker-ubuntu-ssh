@@ -1,5 +1,5 @@
-# 使用 Ubuntu 20.04
-FROM ubuntu:20.04
+# 使用 Ubuntu 24.04
+FROM ubuntu:24.04
 
 # 設定環境變數，避免時區選擇交互模式
 ENV DEBIAN_FRONTEND=noninteractive
@@ -19,7 +19,7 @@ RUN ln -fs /usr/share/zoneinfo/Asia/Taipei /etc/localtime && \
 RUN locale-gen en_US.UTF-8
 
 # 建立 user 使用者，並添加到 sudo 群組
-RUN useradd -rm -d /home/user -s /bin/bash -g root -G sudo -u 1000 user
+RUN useradd -rm -d /home/user -s /bin/bash -g root -G sudo -u 1001 user
 RUN echo 'user:d2tqfp' | chpasswd
 
 # 允許 user 使用 sudo 而不需要輸入密碼
