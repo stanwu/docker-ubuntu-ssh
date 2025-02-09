@@ -12,8 +12,11 @@ This project sets up an Ubuntu 14.04 to 24.04 container with SSH access and vari
 1. Clone the repository:
 
     ```sh
-    git clone https://github.com/yourusername/docker-ubuntu-ssh.git
+    git clone https://github.com/stanwu/docker-ubuntu-ssh.git
     cd docker-ubuntu-ssh
+
+    git branch
+    git checkout [version]
     ```
 
 2. Build and start the container using Docker Compose:
