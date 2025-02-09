@@ -1,5 +1,5 @@
-# 使用 Ubuntu 20.04
-FROM ubuntu:20.04
+# 使用 Ubuntu 14.04
+FROM ubuntu:14.04
 
 # 設定環境變數，避免時區選擇交互模式
 ENV DEBIAN_FRONTEND=noninteractive
@@ -7,7 +7,7 @@ ENV DEBIAN_FRONTEND=noninteractive
 # 更新並安裝必要工具
 RUN apt update && apt install -y \
     tzdata openssh-server sudo curl wget software-properties-common \
-    nodejs npm python3 python3-pip vim neovim git \
+    nodejs npm python3 python3-pip vim git \
     bash-completion locales xz-utils libx11-xcb1 libfuse2
 
 # 設定時區為 Asia/Taipei，避免互動式選擇
