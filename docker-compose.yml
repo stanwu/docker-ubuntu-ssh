@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  ssh-server:
+    build: .
+    container_name: ubuntu-ssh
+    restart: unless-stopped
+    ports:
+      - "2222:22"
+    volumes:
+      - ssh_data:/home/user/ssh_data
+      - /home/user/workspace:/home/user/workspace
+
+volumes:
+  ssh_data:
+
+
+
