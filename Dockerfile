@@ -1,5 +1,5 @@
-# 使用 Ubuntu 20.04
-FROM ubuntu:20.04
+# 使用 Ubuntu 22.04
+FROM ubuntu:22.04
 
 # 設定環境變數，避免時區選擇交互模式
 ENV DEBIAN_FRONTEND=noninteractive
